@@ -9,7 +9,6 @@ url = 'https://ip-trap.com/bait-page/?trap=0ab0ee72-3649-4f38-b5a5-8698368ba47a'
 char_pattern = 'abcdef'
 num_pattern = '0123456789'
 
-
 for i in range(10):
 	c1 = ''.join(random.choices(char_pattern,k=random.randint(1,4)))
 	pad = 8-int(len(c1))
