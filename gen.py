@@ -34,8 +34,12 @@ def generate():
 						if key2.count('V') == 1:
 							c+=1
 							total_keys+=''.join(key)+'\n'
-	return total_keys
+	if(not os.path.exists('valid_keys')):
+		open('valid_keys','w')
 
+	f = open('valid_keys','a')
+	f.write(total_keys+'\n')
+	f.close()
 
 
 def check2(key2):
@@ -56,6 +60,7 @@ def check2(key2):
 	if key2.count('V') != 1:
 		return err
 	return 'valid'
+
 
 def check(key):
 	isValid = False
