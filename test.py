@@ -28,7 +28,9 @@ code4 = ''.join(random.sample(c4+cc4,len(c4+cc4)))
 c5 = ''.join(random.choices(char_pattern,k=random.randint(3,4)))
 cc5 = ''.join(random.choices(string.digits,k=12-int(len(c5))))
 code5 = ''.join(random.sample(c5+cc5,len(c5+cc5)))
-print(code5)
+#print(code5)
+code = f'{code1}-{code2}-{code3}-{code4}-{code5}'
+print(code)
 
 """
 r = requests.get(url)
